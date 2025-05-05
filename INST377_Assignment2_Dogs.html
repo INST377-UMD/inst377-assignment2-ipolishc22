@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Dogs</title>
+  <link rel="stylesheet" href="INST377_Assignment2_Style.css" />
+  <script src="INST377_Assignment2_Dogs.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+  <script src="INST377_Assignment2_Audio.js"></script>
+  <script src="https://unpkg.com/simple-slider"></script>
+  <link rel="stylesheet" href="https://unpkg.com/simple-slider/dist/simple-slider.css" />
+
+</head>
+<body>
+    <h1>INST377 Assignment 2 Illia Polishchuk</h1>
+    <nav>
+        <ul>
+        <li><a href="INST377_Assignment2_Home.html">Home</a></li>
+          <li><a href="INST377_Assignment2_Stocks.html">Stocks</a></li>
+          <li><a href="INST377_Assignment2_Dogs.html">Dogs</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h1>Dog Browser</h1>
+      
+        <div id="carouselContainer">
+          <div id="dog-carousel" class="slider"></div>
+        </div>
+      
+        <div id="breedsContainer"></div>
+      
+        <div id="breedInfo" style="display: none;"></div>
+      </main>
+      
+
+  <div id="audio-controls" class="audio-box">
+    <p>In the web page there are options to Navigate using Audio!</p>
+    <h3>Make sure your mic is enabled to be able to use this feature.</h3>
+    <li>Load Dog Breed</li>
+    <li>Navigate to a Different Page</li>
+    <li>Change the Page Color</li>
+    <li>Say Hello World!</li>
+
+
+
+    <button onclick="startAudio()" class="button-73">Turn On Audio</button>
+    <button onclick="stopAudio()" class="button-73">Turn Off Audio</button>
+  </div>
+
+</body>
+</html>

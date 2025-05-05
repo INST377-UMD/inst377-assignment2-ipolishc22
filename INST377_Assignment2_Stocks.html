@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Stocks</title>
+  <link rel="stylesheet" href="INST377_Assignment2_Style.css" />
+  <script src="INST377_Assignment2_Stocks.js" defer></script>
+  <script src="INST377_Assignment2_Audio.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+          <li><a href="INST377_Assignment2_Home.html">Home</a></li>
+          <li><a href="INST377_Assignment2_Stocks.html">Stocks</a></li>
+          <li><a href="INST377_Assignment2_Dogs.html">Dogs</a></li>
+        </ul>
+      </nav>
+
+
+      <h1>Let's Chart Some Stocks!</h1>
+  <main>
+    <input type="text" id="ticker" placeholder="Enter the stock namer" />
+    <select id="range">
+      <option value="30">30 Days</option>
+      <option value="60">60 Days</option>
+      <option value="90">90 Days</option>
+    </select>
+    <button id="lookupStock" class="button-73">Lookup!</button>
+    <canvas id="stockChart"></canvas>
+
+  </main>
+
+  <div id="audio-controls" class="audio-box">
+    <button onclick="startAudio()" class="button-73">Turn On Audio</button>
+    <button onclick="stopAudio()" class="button-73">Turn Off Audio</button>
+  </div>
+
+</body>
+</html>
